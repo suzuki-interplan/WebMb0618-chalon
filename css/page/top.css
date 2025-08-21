@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/*
+SP ～519px
+tab 520px～959px
+pc 960px～
+*/
+/*===================
+video
+===================*/
+.mv {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+
+.mv video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*===================
+key title
+===================*/
+.key_title {
+    height: 150vh;
+}
+
+.key_title .key_title_inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key_title .key_title_inner img {
+    width: 90%;
+    max-width: 520px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width:960px) {
+    .key_title .key_title_inner {
+        justify-content: end;
+        transform: translateX(calc(var(--gutter-base) * -10));
+
+    }
+}
+
+/*==========min-width:960px================*/
+
+
+/*===================
+スクロール
+===================*/
+.scroll_down {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-top: 81px;
+    z-index: -1;
+}
+
+.scroll_down::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    animation: arrow 1.2s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes arrow {
+    0% {
+        transform: scaleY(0);
+        transform-origin: center 0%;
+    }
+
+    50% {
+        transform: scaleY(1);
+        transform-origin: center 0%;
+    }
+
+    51% {
+        transform: scaleY(1);
+        transform-origin: center 100%;
+    }
+
+    100% {
+        transform: scaleY(0);
+        transform-origin: center 100%;
+    }
+}
+
+
+.scroll_down .arrow_down {
+    width: 8px;
+    height: 8px;
+    /* background-color: red; */
+    display: block;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(135deg);
+}
+
+
+/*===================
+コンセプト
+===================*/
+
+.concept .concept_text {
+    color: #fff;
+    font-size: var(--size-lg);
+    padding-left: var(--contents-side-gutter);
+    padding-right: var(--contents-side-gutter);
+}
+
+.concept .concept_text p {
+    margin-bottom: var(--size-lg);
+}
+
+.concept .concept_img {
+    padding-left: var(--contents-side-gutter);
+    padding-right: var(--contents-side-gutter);
+}
+
+@media screen and (min-width:960px) {
+    .concept .concept_inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .concept .concept_img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .concept .concept_img picture {
+        position: sticky;
+        top: calc(100vh - 375px - var(--gutter-base)*3);
+    }
+}
+
+/*==========min-width:960px================*/
