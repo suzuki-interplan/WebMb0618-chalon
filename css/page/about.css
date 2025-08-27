@@ -1,1 +1,24 @@
 @charset "UTF-8";
+
+.about {
+    padding: 0 var(--contents-side-gutter);
+}
+
+
+.about .about_sozai_text,
+.about .about_kuukan_text {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--contents-gutter);
+}
+
+.about .about_sozai_img,
+.about .about_kuukan_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gutter-base)*2);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}

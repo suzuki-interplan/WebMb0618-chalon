@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>洋菓子店CHALON | 曙橋駅徒歩3分 | お菓子教室 |
-    </title>
-    <!-- お店の名前だけを入れるのは検索エンジン的にNG。お店の名前を知っている人しか検索でヒットしないので場所の名前や駅名、徒歩何分とかキーワードを入れるとよい -->
-    <link rel="stylesheet" href="css/common/reset.min.css">
+    <title>洋菓子店CHALON | xx駅より徒歩3分 | お菓子教室もやっている洋菓子店</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
+
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="css/common/reset.css">
     <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/page/top.css">
 
+    <script src="js/script.js" defer></script>
+    <script src="js/top_observe.js" defer></script>
 </head>
 
 <body>
-
     <header>
         <div class="header_inner">
             <h1 class="logo">
@@ -40,7 +45,7 @@
         </div>
     </div>
     <div class="concept">
-        <div class="concept_inner">
+        <div class="concept_inner center">
 
             <div class="concept_text">
                 <p>
@@ -86,82 +91,190 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="menu">
+        <div class="menu_inner">
+            <h2>
+                <img class="contents_title sp" src="img/spacer.png" alt="menu" data-src="img/title_menu_sp.svg"
+                    style="height: 67px;">
+                <img class="contents_title pc" src="img/spacer.png" data-src="img/title_menu_pc.svg" alt="menu"
+                    style="height:134px;">
+            </h2>
+            <ul class="slider">
+                <li>
+                    <picture>
+                        <source srcset="img/menu_01.webp" type="image/webp">
+                        <img src="img/menu_01.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_02.webp" type="image/webp">
+                        <img src="img/menu_02.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_03.webp" type="image/webp">
+                        <img src="img/menu_03.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_04.webp" type="image/webp">
+                        <img src="img/menu_04.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_05.webp" type="image/webp">
+                        <img src="img/menu_05.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_06.webp" type="image/webp">
+                        <img src="img/menu_06.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_07.webp" type="image/webp">
+                        <img src="img/menu_07.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_08.webp" type="image/webp">
+                        <img src="img/menu_08.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_09.webp" type="image/webp">
+                        <img src="img/menu_09.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_10.webp" type="image/webp">
+                        <img src="img/menu_10.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_11.webp" type="image/webp">
+                        <img src="img/menu_11.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_12.webp" type="image/webp">
+                        <img src="img/menu_12.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_13.webp" type="image/webp">
+                        <img src="img/menu_13.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/menu_14.webp" type="image/webp">
+                        <img src="img/menu_14.jpg" width="500" height="375" alt="">
+                    </picture>
+                </li>
+            </ul>
+            <p class="menu_text">
+                お客様がケーキを楽しんでいただけるよう、<br>
+                一つ一つの素材や鮮度にこだわっています。<br>
+                当店自慢のケーキや焼き菓子を、<br>
+                どうぞ召し上がってください。
+            </p>
+            <a href="#" class="btn">メニュー一覧</a>
 
-    <!-- position=fixedにしているのでわざわざ上に書く必要がないので下に記述する。上のほうに書いても問題はないけど、検索エンジン的にあくまでオカルトだけど、重要なものを上に書いたほうがいいとされているため、動画を下にしている。 -->
+
+        </div>
+    </section>
+    <section class="lesson">
+        <div class="lesson_inner center">
+            <h2>
+                <img class="contents_title sp" src="img/spacer.png" data-src="img/title_lesson_sp.svg" alt="lesson"
+                    style="height: 67px;">
+                <img class="contents_title pc" src="img/spacer.png" data-src="img/title_lesson_pc.svg" alt="lesson"
+                    style="height: 134px;">
+            </h2>
+            <p class="lesson_text">
+                CHALONでは、毎月第１・第２土曜日に、ご家族で参加できるお菓子教室を開催しています。<br>
+                当店の職人が、一から丁寧にレクチャーしますので、小さいお子さんでも安心して参加していただけます。<br>
+                家族の楽しい思い出作りに、是非御参加ください。
+            </p>
+            <picture class="lesson_img">
+                <source srcset="img/top_lesson.webp" type="image/webp">
+                <img src="img/top_lesson.jpg" width="588" height="588" alt="">
+            </picture>
+            <a href="#" class="btn">お菓子教室についてもっと見る</a>
+        </div>
+    </section>
+
+    <div class="bg_placeholder"></div>
+
+    <section class="news">
+        <div class="news_inner">
+            <h2>
+                <img class="contents_title sp" src="img/spacer.png" data-src="img/title_news_sp.svg" alt="news"
+                    style="height: 67px;">
+                <img class="contents_title pc" src="img/spacer.png" data-src="img/title_news_pc.svg" alt="news"
+                    style="height: 134px;">
+            </h2>
+            <dl>
+                <dt><time datetime="2025-08-21">2025年08月21日</time></dt>
+                <dd><a href="#">9月の新作ケーキのお知らせ</a></dd>
+            </dl>
+            <dl>
+                <dt><time datetime="2025-08-22">2025年08月22日</time></dt>
+                <dd><a href="#">今日はショートケーキの日</a></dd>
+            </dl>
+            <dl>
+                <dt><time datetime="2025-08-21">2025年08月21日</time></dt>
+                <dd><a href="#">9月の新作ケーキのお知らせ</a></dd>
+            </dl>
+            <dl>
+                <dt><time datetime="2025-08-21">2025年08月21日</time></dt>
+                <dd><a href="#">9月の新作ケーキのお知らせ</a></dd>
+            </dl>
+            <dl>
+                <dt><time datetime="2025-08-21">2025年08月21日</time></dt>
+                <dd><a href="#">9月の新作ケーキのお知らせ</a></dd>
+            </dl>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_inner">
+            <img src="img/logo_white.svg" alt="洋菓子店CHALON">
+            <address>
+                TEL:03-1234-5678<br>
+                〒123-4567 東京都新宿区xxxx 1-2-3
+            </address>
+            <small>&copy; CHALON</small>
+        </div>
+    </footer>
     <div class="mv">
         <div class="mv_inner">
-            <!-- srcのみを入れた状態で見ても、この動画は白い背景からふわっと始まるので表示されてないように見える。autoplayを入れたら動画は音が再生するかどうか入力しないと駄目な仕様なので、mutedを入れる。 -->
             <video src="movie/top.mp4" autoplay muted loop playsinline></video>
         </div>
     </div>
+    <div class="bg"></div>
     <div class="scroll_down">
         <span class="arrow_down"></span>
     </div>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/top_slider.js"></script>
 </body>
 
 </html>

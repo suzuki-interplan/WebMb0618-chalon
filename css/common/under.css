@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.under_title {
+    background-image: url(../../img/top_lesson.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+}
+
+.under_title_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.under_title_inner .contents_title {
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: calc(var(--gutter-base)*2) calc(var(--gutter-base)*4);
+}
+
+@media screen and (min-width:960px) {
+    .under_title {
+        height: 500px;
+    }
+
+    .under_title_inner {
+        height: 500px;
+        justify-content: start;
+    }
+
+    .under_title_inner .contents_title {
+        padding: calc(var(--gutter-base)*3) calc(var(--gutter-base)*6);
+    }
+}
+
+/*==========min-width:960px================*/

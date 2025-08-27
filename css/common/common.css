@@ -18,6 +18,10 @@
     --font-sans: "Noto Sans JP", sans-serif;
     --font-serif: "Noto Serif JP", serif;
     --contents-side-gutter: calc(var(--gutter-base) * 2);
+    --section-gutter: calc(var(--gutter-base) * 10);
+    --section-gutter-pc: calc(var(--gutter-base) * 20);
+    --contents-gutter: calc(var(--gutter-base) * 5);
+    --contents-gutter-pc: calc(var(--gutter-base) * 10);
 }
 
 
@@ -51,6 +55,61 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+
+.contents_title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--contents-gutter);
+}
+
+.contents_title.pc {
+    display: none;
+}
+
+.btn {
+    border: 1px solid var(--main-color);
+    width: 350px;
+    display: block;
+    line-height: 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn::after {
+    transition: 0.3s;
+    content: "chevron_right";
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    right: calc(var(--gutter-base)*2);
+}
+
+@media screen and (min-width:960px) {
+    .contents_title {
+        margin-bottom: var(--contents-gutter-pc);
+    }
+
+    .contents_title.sp {
+        display: none;
+    }
+
+    .contents_title.pc {
+        display: block;
+    }
+
+    .btn:hover {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+
+    .btn:hover::after {
+        right: var(--gutter-base);
+    }
+}
+
+/*==========min-width:960px================*/
 
 
 /*=================
@@ -180,3 +239,36 @@ header.on .hum_menu .hum_menu_line::after {
 }
 
 /*==========min-width:960px================*/
+
+
+/* body {
+    overflow-x: hidden;
+} */
+
+/*=================
+footer
+==================*/
+footer {
+    background-color: #fff;
+    padding-top: calc(var(--gutter-base)*30);
+}
+
+.footer_inner {
+    background-color: var(--main-color);
+    padding-top: calc(var(--gutter-base)*3);
+    text-align: center;
+    color: #fff;
+}
+
+.footer_inner address {
+    font-style: normal;
+    margin-bottom: calc(var(--gutter-base)*3);
+}
+
+footer img {
+    width: 50%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(var(--gutter-base)*3);
+}

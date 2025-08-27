@@ -116,6 +116,10 @@ key title
 /*===================
 コンセプト
 ===================*/
+.concept {
+    margin-bottom: var(--section-gutter);
+}
+
 
 .concept .concept_text {
     color: #fff;
@@ -134,6 +138,12 @@ key title
 }
 
 @media screen and (min-width:960px) {
+    .concept {
+        margin-bottom: var(--section-gutter-pc);
+    }
+
+
+
     .concept .concept_inner {
         display: flex;
         justify-content: space-between;
@@ -151,3 +161,168 @@ key title
 }
 
 /*==========min-width:960px================*/
+
+/*===================
+メニュー
+===================*/
+.menu {
+    background-color: #fff;
+    padding: var(--section-gutter) 0;
+}
+
+.menu .slider {
+    margin-bottom: var(--contents-gutter);
+}
+
+.menu .slider li {
+    padding: 0 calc(var(--gutter-base)*2);
+}
+
+.menu .menu_text {
+    text-align: center;
+    margin-bottom: var(--contents-gutter);
+}
+
+@media screen and (min-width:960px) {
+    .menu {
+        padding: var(--section-gutter-pc) 0;
+    }
+
+    .menu .slider {
+        margin-bottom: var(--contents-gutter-pc);
+    }
+
+    .menu .menu_text {
+        margin-bottom: var(--contents-gutter-pc);
+    }
+
+}
+
+/*==========min-width:960px================*/
+
+
+/*===================
+お菓子教室
+===================*/
+.lesson {
+    background-color: #fff;
+    padding-bottom: var(--section-gutter);
+}
+
+.lesson .lesson_text {
+    padding: 0 var(--contents-side-gutter);
+    margin-bottom: var(--contents-gutter);
+}
+
+.lesson .lesson_img {
+    padding: 0 var(--contents-side-gutter);
+    margin-bottom: var(--contents-gutter);
+}
+
+@media screen and (min-width:960px) {
+    .lesson {
+        margin-bottom: var(--section-gutter-pc);
+    }
+
+    .lesson .lesson_text {
+        margin-bottom: 0;
+    }
+
+    .lesson .lesson_img {
+        margin-bottom: 0;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .lesson .lesson_inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .lesson .lesson_inner .btn {
+        align-self: self-start;
+    }
+
+    .lesson .lesson_inner h2 .contents_title {
+        margin-bottom: 0;
+    }
+}
+
+/*==========min-width:960px================*/
+
+/*===================
+下の画像
+===================*/
+.bg_placeholder {
+    height: 350px;
+    /* background-image: url(../../img/top_showcase.webp);
+    background-size: cover; */
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../img/top_showcase.webp);
+    background-size: cover;
+    z-index: -1;
+    display: none;
+}
+
+.bg.on {
+    display: block;
+}
+
+@media screen and (min-width:960px) {
+    .bg_placeholder {
+        height: 600px;
+    }
+}
+
+/*==========min-width:960px================*/
+
+/*===================
+お知らせ
+===================*/
+.news {
+    background-color: #fff;
+    padding-top: var(--section-gutter);
+}
+
+.news dl {
+    padding: 0 var(--contents-side-gutter);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news dl:not(:last-child) {
+    margin-bottom: calc(var(--gutter-base)*2);
+}
+
+
+.news dl dd {
+    border-bottom: 2px dotted var(--main-color);
+    padding-bottom: var(--gutter-base);
+}
+
+@media screen and (min-width:520px) {
+    .news dl {
+        display: flex;
+        border-bottom: 2px dotted var(--main-color);
+    }
+
+    .news dl dt {
+        width: 30%;
+    }
+
+    .news dl dd {
+        width: 70%;
+        border: none;
+    }
+}
+
+/*==========min-width:520px================*/
